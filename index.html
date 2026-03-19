@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DPSHTRR Super Vehicle App</title>
+style.css
+</head>
+<body>
+
+<header class="header">DPSHTRR – Vehicle Organisation System</header>
+
+<div class="container">
+
+<h2>Regjistrimi i Mjeteve</h2>
+
+<div class="form-box">
+
+<label>Targa:</label>
+<input id="targa">
+
+<label>Shasia (VIN):</label>
+<input id="vin">
+
+<label>Lloji Mjetit:</label>
+<select id="lloji">
+  <option>Autoveturë</option>
+  <option>Motoçikletë</option>
+  <option>Moped</option>
+  <option>Furgon</option>
+  <option>Kamion</option>
+  <option>Kamionçinë</option>
+  <option>Autobus</option>
+  <option>Rimorkio</option>
+  <option>Karrell</option>
+  <option>Traktor</option>
+  <option>Makineri ndërtimi</option>
+  <option>Makineri bujqësore</option>
+  <option>Tjetër</option>
+</select>
+
+<label>Statusi:</label>
+<select id="statusi">
+  <option>Aktive</option>
+  <option>Çregjistrim i përhershëm</option>
+  <option>Çregjistrim i përkohshëm</option>
+</select>
+
+<label>Data Regjistrimit:</label>
+<input type="date" id="data">
+
+<label>Personi Përgjegjës:</label>
+<input id="personi">
+
+<button onclick="regjistro()">Regjistro</button>
+<button onclick="kerko()">Kërko</button>
+<button onclick="eksportExcel()">Eksporto Excel</button>
+<button onclick="fshiTeDhenat()">Fshi Gjithçka</button>
+
+</div>
+
+<h2>Lista e Mjeteve</h2>
+
+<table id="tabela">
+<thead>
+<tr>
+<th>Targa</th><th>VIN</th><th>Lloji</th><th>Data</th><th>Personi</th><th>Statusi</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<h2>Historiku i Veprimeve</h2>
+<ul id="historiku"></ul>
+
+</div>
+
+app.js</script>
+</body>
+</html>
